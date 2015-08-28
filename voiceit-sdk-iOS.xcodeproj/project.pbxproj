@@ -36,6 +36,7 @@
 		21B222FA1B90BE3D008D2659 /* voiceit-sdk-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "voiceit-sdk-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21B222FF1B90BE3D008D2659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21B223001B90BE3D008D2659 /* voiceit_sdk_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = voiceit_sdk_iOSTests.swift; sourceTree = "<group>"; };
+		21CDFB751B90BFF200155BDD /* voiceit-sdk-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "voiceit-sdk-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +84,7 @@
 				21B222F11B90BE3D008D2659 /* Images.xcassets */,
 				21B222F31B90BE3D008D2659 /* LaunchScreen.xib */,
 				21B222E81B90BE3D008D2659 /* Supporting Files */,
+				21CDFB751B90BFF200155BDD /* voiceit-sdk-iOS-Bridging-Header.h */,
 			);
 			path = "voiceit-sdk-iOS";
 			sourceTree = "<group>";
@@ -342,9 +344,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "voiceit-sdk-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "voiceit-sdk-iOS/voiceit-sdk-iOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -352,9 +357,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "voiceit-sdk-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "voiceit-sdk-iOS/voiceit-sdk-iOS-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -411,6 +418,7 @@
 				21B223061B90BE3D008D2659 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		21B223071B90BE3D008D2659 /* Build configuration list for PBXNativeTarget "voiceit-sdk-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +427,7 @@
 				21B223091B90BE3D008D2659 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
