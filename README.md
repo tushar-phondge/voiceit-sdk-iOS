@@ -71,7 +71,7 @@ VoiceItLogin * vc =
  userToken:USER_TOKEN_HERE
  vpPhrase:@"Never forget tomorrow is a new day"
  textConfidence:@"30.0"
- confidence:@"87"
+ confidence:@"89"
  callback:^(NSString *result) {
        if ([result isEqualToString:@"Success"]) {
            //DO STUFF WHEN AUTHENTICATED SUCCESSFULLY
