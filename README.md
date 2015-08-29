@@ -1,13 +1,12 @@
 # VoiceIt SDK for iOS
 
-## Navigation
+A library that gives you out of the box access to the VoiceIt's Voice Authentication API right from your iOS app.
+For more information on VoiceIt and its features, see [the website](http://voiceit.tech) and [getting started docs](https://siv.voiceprintportal.com/getstarted.jsp)
+
 * [Getting Started](#getting-started)
 * [Installation](#installation)
 * [Setup](#setup)
 * [Preview](#preview)
-
-A library that gives you out of the box access to the VoiceIt's Voice Authentication API right from your iOS app.
-For more information on VoiceIt and its features, see [the website](http://voiceit.tech) and [getting started docs](https://siv.voiceprintportal.com/getstarted.jsp)
 
 ## Getting Started
 
@@ -89,3 +88,8 @@ VoiceItLogin * vc =
 [self presentViewController:vc animated:YES completion:nil];
 ```
 ##Preview
+![alt text](https://github.com/voiceittech/voiceit-sdk-iOS/blob/master/iOS-SDK-ScreenShot1.png "Preview1")
+![alt text](https://github.com/voiceittech/voiceit-sdk-iOS/blob/master/iOS-SDK-ScreenShot2.png "Preview2")
+![alt text](https://github.com/voiceittech/voiceit-sdk-iOS/blob/master/iOS-SDK-ScreenShot3.png "Preview3")
+![alt text](https://github.com/voiceittech/voiceit-sdk-iOS/blob/master/iOS-SDK-ScreenShot4.png "Preview4")
+![alt text](https://github.com/voiceittech/voiceit-sdk-iOS/blob/master/iOS-SDK-ScreenShot5.png "Preview5")
