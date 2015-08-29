@@ -57,3 +57,18 @@ If you are programming in Objective-C then you can simply import the SDK into wh
 ```objc
 #import <VoiceItSDK/VoiceItSDK.h>
 ```
+After importing the library in the file we can initialize the VoiceItLogin View Controller by adding the following code snippet wherever we like, in our code.
+
+```objc
+VoiceItLogin * vc = [[VoiceItLogin alloc] init:DEVELOPER_ID_HERE userToken:USER_TOKEN_HERE vpPhrase:@"Never forget tomorrow is a new day" textConfidence:@"30.0" confidence:@"87" callback:^(NSString *result) {
+       if ([result isEqualToString:@"Success"]) {
+           //DO STUFF WHEN AUTHENTICATED SUCCESSFULLY
+       }
+       else{
+           //DO STUFF IF AUTHENTICATION FAILED
+       }
+       }];
+
+   [self presentViewController:vc animated:YES completion:nil];
+ }
+```
