@@ -7,18 +7,18 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>BEFD1ADD-BABA-412F-A600-226A8C1678EF</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>voiceit-sdk-ios</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>333928DF5056606F25103357F45CFFA00776D4C7</key>
 		<string>github.com:voiceittech/voiceit-sdk-iOS.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>DemoStarterProjectObjectiveC/voiceit-sdk-ios/voiceit-sdk-ios.xcodeproj/project.xcworkspace</string>
+	<string>DemoStarterProjectObjectiveC/voiceit-sdk-ios.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>333928DF5056606F25103357F45CFFA00776D4C7</key>
-		<string>../../../..</string>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>github.com:voiceittech/voiceit-sdk-iOS.git</string>
