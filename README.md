@@ -18,7 +18,7 @@ After successfully adding the framework and resources bundle  you will need to a
 2. AVFoundation.framework
 3. MediaPlayer.framework
 ```
-Please follows these steps:
+To do so please follows these steps:
 
 * In the project editor, select the target to which you want to add a library or framework.
 * Click Build Phases at the top of the project editor.
@@ -27,3 +27,33 @@ Please follows these steps:
 * Select a library or framework from the list and click Add.
 
 ![alt text](https://github.com/voiceittech/voiceit-sdk-iOS/blob/master/frameworks.png "Preview")
+
+**Congratulations** you now have the SDK Installed and can start programming with it, please follow the **Setup** instructions below to continue.
+
+## Setup
+### Swift
+If you are programming in Swift then you need to first setup an Objective-C bridging header before starting. You can follow [this guide](http://www.learnswiftonline.com/getting-started/adding-swift-bridging-header/) to create a bridging header. Then add the following to the top of the file:
+```objc
+#import <VoiceItSDK/VoiceItSDK.h>
+```
+After importing the library in the file we can initialize the VoiceItLogin View Controller by adding the following code snippet wherever we like, in our code.
+
+```swift
+let vc = VoiceItLogin(DEVELOPER_ID_HERE,userToken: USER_TOKEN_HERE,vpPhrase: "Never forget tomorrow is a new day", textConfidence: "30.0", confidence: "89" , callback: { (result) -> Void in
+    if result == "Success"
+    {
+        //DO SOMETHING IF SUCCESSFULLY AUTHENTICATED
+    }
+    else if result == "Failed"
+    {
+        //DO SOMETHING IF AUTHENTICATION FAILED
+    }
+})
+self.presentViewController(vc, animated: true, completion: nil)
+```
+
+### Objective-C
+If you are programming in Objective-C then you can simply import the SDK into whichever .h or .m file you would like to use it, with the import statement.
+```objc
+#import <VoiceItSDK/VoiceItSDK.h>
+```
