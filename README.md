@@ -34,7 +34,7 @@ To do so please follows these steps:
 * Click the Add button (+) to add a library or framework.
 * Select a library or framework from the list and click Add.
 
-![alt text](https://github.com/voiceittech/voiceit-sdk-iOS/blob/master/frameworks.png "Preview")
+![alt text](https://github.com/voiceittech/voiceit-sdk-iOS/blob/master/images/frameworks.png "Preview")
 
 **Congratulations** you now have the SDK Installed and can start programming with it, please follow the **Setup** instructions below to continue.
 
@@ -91,12 +91,12 @@ VoiceItLogin * vc =
 [self presentViewController:vc animated:YES completion:nil];
 ```
 ##Preview
-![alt text](https://github.com/voiceittech/voiceit-sdk-iOS/blob/master/iOS-SDK-ScreenShot1.png "Preview1")
-![alt text](https://github.com/voiceittech/voiceit-sdk-iOS/blob/master/iOS-SDK-ScreenShot2.png "Preview2")
-![alt text](https://github.com/voiceittech/voiceit-sdk-iOS/blob/master/iOS-SDK-ScreenShot3.png "Preview3")
-![alt text](https://github.com/voiceittech/voiceit-sdk-iOS/blob/master/iOS-SDK-ScreenShot4.png "Preview4")
-![alt text](https://github.com/voiceittech/voiceit-sdk-iOS/blob/master/iOS-SDK-ScreenShot5.png "Preview5")
-![alt text](https://github.com/voiceittech/voiceit-sdk-iOS/blob/master/iOS-SDK-ScreenShot6.png "Preview5")
+![alt text](https://github.com/voiceittech/voiceit-sdk-iOS/blob/master/images/iOS-SDK-ScreenShot1.png "Preview1")
+![alt text](https://github.com/voiceittech/voiceit-sdk-iOS/blob/master/images/iOS-SDK-ScreenShot2.png "Preview2")
+![alt text](https://github.com/voiceittech/voiceit-sdk-iOS/blob/master/images/iOS-SDK-ScreenShot3.png "Preview3")
+![alt text](https://github.com/voiceittech/voiceit-sdk-iOS/blob/master/images/iOS-SDK-ScreenShot4.png "Preview4")
+![alt text](https://github.com/voiceittech/voiceit-sdk-iOS/blob/master/images/iOS-SDK-ScreenShot5.png "Preview5")
+![alt text](https://github.com/voiceittech/voiceit-sdk-iOS/blob/master/images/iOS-SDK-ScreenShot6.png "Preview5")
 
 ##Attributions
 Thanks to [Mohd Iftekhar Qurashi](https://github.com/hackiftekhar) for his awesome [IQAudioRecorderController](https://github.com/hackiftekhar/IQAudioRecorderController) library.
