@@ -93,3 +93,4 @@ VoiceItLogin * vc =
 ![alt text](https://github.com/voiceittech/voiceit-sdk-iOS/blob/master/iOS-SDK-ScreenShot3.png "Preview3")
 ![alt text](https://github.com/voiceittech/voiceit-sdk-iOS/blob/master/iOS-SDK-ScreenShot4.png "Preview4")
 ![alt text](https://github.com/voiceittech/voiceit-sdk-iOS/blob/master/iOS-SDK-ScreenShot5.png "Preview5")
+![alt text](https://github.com/voiceittech/voiceit-sdk-iOS/blob/master/iOS-SDK-ScreenShot6.png "Preview5")
