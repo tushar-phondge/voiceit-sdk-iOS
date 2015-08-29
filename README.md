@@ -42,7 +42,7 @@ To do so please follows these steps:
 
 ## Setup
 ### The Parameters
-First lets introduce you to some vocabulary(parameters) that are needed to setup this SDK in your app
+First lets introduce you to some vocabulary(parameters) that is needed to setup this SDK in your app
   1. **DeveloperId** : Your unique Developer Id that you can obtain at [voiceit.tech](https://siv.voiceprintportal.com/getDeveloperID.jsp)
   2. **UserToken** : A unique user token(with no spaces) that ties the VoiceIt user enrollments to the user in your own database ex. *johndoe123*
   3. **vpPhrase** : The phrase you would like the user to enroll and authenticate with chosen from [this list](https://siv.voiceprintportal.com/att/en-US-grammar.grxml)
