@@ -39,7 +39,13 @@ If you are programming in Swift then you need to first setup an Objective-C brid
 After importing the library in the file we can initialize the VoiceItLogin View Controller by adding the following code snippet wherever we like, in our code.
 
 ```swift
-let vc = VoiceItLogin(DEVELOPER_ID_HERE,userToken: USER_TOKEN_HERE,vpPhrase: "Never forget tomorrow is a new day", textConfidence: "30.0", confidence: "89" , callback: { (result) -> Void in
+let vc = VoiceItLogin(
+  DEVELOPER_ID_HERE,
+  userToken: USER_TOKEN_HERE,
+  vpPhrase: "Never forget tomorrow is a new day",
+  textConfidence: "30.0",
+  confidence: "89" ,
+  callback: { (result) -> Void in
     if result == "Success"
     {
         //DO SOMETHING IF SUCCESSFULLY AUTHENTICATED
@@ -60,7 +66,13 @@ If you are programming in Objective-C then you can simply import the SDK into wh
 After importing the library in the file we can initialize the VoiceItLogin View Controller by adding the following code snippet wherever we like, in our code.
 
 ```objc
-VoiceItLogin * vc = [[VoiceItLogin alloc] init:DEVELOPER_ID_HERE userToken:USER_TOKEN_HERE vpPhrase:@"Never forget tomorrow is a new day" textConfidence:@"30.0" confidence:@"87" callback:^(NSString *result) {
+VoiceItLogin * vc =
+ [[VoiceItLogin alloc] init:DEVELOPER_ID_HERE
+ userToken:USER_TOKEN_HERE
+ vpPhrase:@"Never forget tomorrow is a new day"
+ textConfidence:@"30.0"
+ confidence:@"87"
+ callback:^(NSString *result) {
        if ([result isEqualToString:@"Success"]) {
            //DO STUFF WHEN AUTHENTICATED SUCCESSFULLY
        }
