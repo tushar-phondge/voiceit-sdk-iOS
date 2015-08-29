@@ -96,3 +96,6 @@ VoiceItLogin * vc =
 ![alt text](https://github.com/voiceittech/voiceit-sdk-iOS/blob/master/iOS-SDK-ScreenShot4.png "Preview4")
 ![alt text](https://github.com/voiceittech/voiceit-sdk-iOS/blob/master/iOS-SDK-ScreenShot5.png "Preview5")
 ![alt text](https://github.com/voiceittech/voiceit-sdk-iOS/blob/master/iOS-SDK-ScreenShot6.png "Preview5")
+
+##Attributions
+Thanks to [Mohd Iftekhar Qurashi](https://github.com/hackiftekhar) for his awesome [IQAudioRecorderController](https://github.com/hackiftekhar/IQAudioRecorderController) library.
