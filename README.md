@@ -8,3 +8,13 @@ For more information on VoiceIt and its features, see [the website](http://voice
 To use the VoiceIt in your iOS app, if you haven't already, please Sign Up for a free Developer id at [http://voiceit.tech](https://siv.voiceprintportal.com/getDeveloperID.jsp). Then either fork this repository and try the DemoStarterProject or download the [VoiceIt iOS SDK Zip](https://github.com/voiceittech/voiceit-sdk-iOS/blob/master/VoiceIt-iOS-SDK.zip?raw=true) and follow the installation instructions below.
 
 ## Installation
+
+Once you have downloaded the [VoiceIt iOS SDK Zip](https://github.com/voiceittech/voiceit-sdk-iOS/blob/master/VoiceIt-iOS-SDK.zip?raw=true) simply drag and drop both the VoiceItResources.bundle and VoiceItSDK.framework file into your project.
+
+After successfully adding the framework and resources bundle  you will need to add some built in iOS frameworks that are required by the iOS SDK. Please follows these steps:
+1. In the project editor, select the target to which you want to add a library or framework.
+2. Click Build Phases at the top of the project editor.
+3. Open the Link Binary With Libraries section.
+4. Click the Add button (+) to add a library or framework.
+5. Select a library or framework from the list and click Add.
+![alt text](https://github.com/voiceittech/voiceit-sdk-iOS/blob/master/frameworks.png "Preview")
