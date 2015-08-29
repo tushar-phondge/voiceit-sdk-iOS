@@ -6,10 +6,12 @@ For more information on VoiceIt and its features, see [the website](http://voice
 * [Getting Started](#getting-started)
 * [Installation](#installation)
 * [Setup](#setup)
+  * [The Parameters](#the-parameters)
   * [Swift](#swift)
   * [Objective-C](#objective-c)
 * [Preview](#preview)
 * [Attributions](#attributions)
+
 
 ## Getting Started
 
@@ -39,6 +41,14 @@ To do so please follows these steps:
 **Congratulations** you now have the SDK Installed and can start programming with it, please follow the **Setup** instructions below to continue.
 
 ## Setup
+### The Parameters
+First lets introduce you to some vocabulary(parameters) that are needed to setup this SDK in your app
+1. **DeveloperId** : Your unique Developer Id that you can obtain at [voiceit.tech](https://siv.voiceprintportal.com/getDeveloperID.jsp)
+2. **UserToken** : A unique user token(with no spaces) that ties the VoiceIt user enrollments to the user in your own database ex. *johndoe123*
+3. **vpPhrase** : The phrase you would like the user to enroll and authenticate with chosen from [this list](https://siv.voiceprintportal.com/att/en-US-grammar.grxml)
+4. **textConfidence** : Text confidence usually set between 20.0 and 50.0 to make sure the user's are using the right phrase
+5. **confidence** : The authentication confidence level between 85.0 - 100.0, recommended to use 89.0 for best results
+
 ### Swift
 If you are programming in Swift then you need to first setup an Objective-C bridging header before starting. You can follow [this guide](http://www.learnswiftonline.com/getting-started/adding-swift-bridging-header/) to create a bridging header. Then add the following to the top of the bridging-header file:
 ```objc
