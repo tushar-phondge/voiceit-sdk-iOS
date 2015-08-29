@@ -5,7 +5,7 @@ For more information on VoiceIt and its features, see [the website](http://voice
 
 ## Getting Started
 
-To use the VoiceIt in your iOS app, if you haven't already, please Sign Up for a free **Developer Id** at [http://voiceit.tech](https://siv.voiceprintportal.com/getDeveloperID.jsp). Then either fork this repository and try the DemoStarterProject or download the [VoiceIt iOS SDK Zip](https://github.com/voiceittech/voiceit-sdk-iOS/blob/master/VoiceIt-iOS-SDK.zip?raw=true) and follow the installation instructions below.
+To use the VoiceIt in your iOS app, if you haven't already, please Sign Up for a free **Developer Id** at [http://voiceit.tech](https://siv.voiceprintportal.com/getDeveloperID.jsp). Then either fork this repository and try the [DemoStarterProjectSwift](https://github.com/voiceittech/voiceit-sdk-iOS/tree/master/DemoStarterProjectSwift) or [DemoStarterProjectObjectiveC](https://github.com/voiceittech/voiceit-sdk-iOS/tree/master/DemoStarterProjectObjectiveC) , otherwise you can also manually download the [VoiceIt iOS SDK Zip](https://github.com/voiceittech/voiceit-sdk-iOS/blob/master/VoiceIt-iOS-SDK.zip?raw=true) and follow the installation instructions below.
 
 ## Installation
 
@@ -80,7 +80,6 @@ VoiceItLogin * vc =
            //DO STUFF IF AUTHENTICATION FAILED
        }
        }];
-
-   [self presentViewController:vc animated:YES completion:nil];
- }
+[self presentViewController:vc animated:YES completion:nil];
 ```
+##Preview
