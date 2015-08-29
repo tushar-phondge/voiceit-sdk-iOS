@@ -40,7 +40,7 @@ To do so please follows these steps:
 
 ## Setup
 ### Swift
-If you are programming in Swift then you need to first setup an Objective-C bridging header before starting. You can follow [this guide](http://www.learnswiftonline.com/getting-started/adding-swift-bridging-header/) to create a bridging header. Then add the following to the top of the file:
+If you are programming in Swift then you need to first setup an Objective-C bridging header before starting. You can follow [this guide](http://www.learnswiftonline.com/getting-started/adding-swift-bridging-header/) to create a bridging header. Then add the following to the top of the bridging-header file:
 ```objc
 #import <VoiceItSDK/VoiceItSDK.h>
 ```
