@@ -5,9 +5,9 @@ For more information on VoiceIt and its features, see [the website](http://voice
 
 * [Getting Started](#getting-started)
 * [Installation](#installation)
-* [Setup](#setup)
-..* [Swift](#swift)
-..* [Objective-C](#objective-c)
+  * [Setup](#setup)
+  * [Swift](#swift)
+* [Objective-C](#objective-c)
 * [Preview](#preview)
 
 ## Getting Started
