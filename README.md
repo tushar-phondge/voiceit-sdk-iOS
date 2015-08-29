@@ -9,6 +9,7 @@ For more information on VoiceIt and its features, see [the website](http://voice
   * [Swift](#swift)
   * [Objective-C](#objective-c)
 * [Preview](#preview)
+* [Attributions](#attributions)
 
 ## Getting Started
 
