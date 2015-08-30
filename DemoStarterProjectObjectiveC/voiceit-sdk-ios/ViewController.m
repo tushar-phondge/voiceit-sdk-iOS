@@ -19,7 +19,7 @@ NSString * DEVELOPER_ID;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //ADD YOUR VOICEIT DEVELOPER ID HERE for Example: 123456, If you do not already have a DEVELOPER ID get one
+    //ADD YOUR VoiceIt DEVELOPER ID HERE for Example: 123456, If you do not already have a DEVELOPER ID get one
     //at https://siv.voiceprintportal.com/getDeveloperID.jsp
     DEVELOPER_ID = @"DEVELOPER_ID_HERE";
     // Do any additional setup after loading the view, typically from a nib.

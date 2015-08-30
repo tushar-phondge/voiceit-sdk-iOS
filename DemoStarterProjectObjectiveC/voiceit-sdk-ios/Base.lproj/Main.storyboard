@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,13 +16,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SnA-Kl-JWF">
-                                <rect key="frame" x="140" y="129" width="320" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Result Will Display Here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzF-aK-uhi">
                                 <rect key="frame" x="205" y="289" width="183" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Enter a unique userToken in text field and tap Login" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8Q-fQ-y62">
+                                <rect key="frame" x="147" y="65" width="307" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="307" id="9VZ-Te-Qnd"/>
+                                    <constraint firstAttribute="height" constant="44" id="HYc-Sm-2mo"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -37,17 +41,26 @@
                                     <action selector="clickedLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="awR-ZV-Aor"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SnA-Kl-JWF">
+                                <rect key="frame" x="176" y="133" width="248" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="248" id="3tc-cA-GN5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="pzF-aK-uhi" secondAttribute="centerX" id="1R1-Mb-fkq"/>
                             <constraint firstItem="Ygc-x2-n2r" firstAttribute="top" secondItem="SnA-Kl-JWF" secondAttribute="bottom" constant="46" id="CUp-9P-cbM"/>
                             <constraint firstAttribute="centerX" secondItem="SnA-Kl-JWF" secondAttribute="centerX" id="Cc0-6m-VEU"/>
+                            <constraint firstAttribute="centerX" secondItem="u8Q-fQ-y62" secondAttribute="centerX" id="NSO-0c-g8D"/>
+                            <constraint firstItem="u8Q-fQ-y62" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="59" id="VHq-53-zOx"/>
                             <constraint firstAttribute="centerX" secondItem="Ygc-x2-n2r" secondAttribute="centerX" id="dnf-0h-rRX"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="SnA-Kl-JWF" secondAttribute="trailing" constant="124" id="hI9-k1-TDa"/>
-                            <constraint firstItem="SnA-Kl-JWF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="124" id="mXF-No-2j4"/>
+                            <constraint firstItem="SnA-Kl-JWF" firstAttribute="top" secondItem="u8Q-fQ-y62" secondAttribute="bottom" constant="29" id="lwK-s5-21X"/>
                             <constraint firstItem="pzF-aK-uhi" firstAttribute="top" secondItem="Ygc-x2-n2r" secondAttribute="bottom" constant="54" id="mg5-MD-BFR"/>
-                            <constraint firstItem="SnA-Kl-JWF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="109" id="mmP-gm-waO"/>
+                            <constraint firstAttribute="centerX" secondItem="u8Q-fQ-y62" secondAttribute="centerX" id="nUC-eK-HfL"/>
                         </constraints>
                     </view>
                     <connections>

@@ -50,6 +50,7 @@ First lets introduce you to some vocabulary(parameters) that is needed to setup 
   5. **confidence** : The authentication confidence level between 85.0 - 100.0, recommended to use 89.0 for best results
 
 * If using Objective-C please [skip](#objective-c)
+
 ### Swift
 If you are programming in Swift then you need to first setup an Objective-C bridging header before starting. You can follow [this guide](http://www.learnswiftonline.com/getting-started/adding-swift-bridging-header/) to create a bridging header. Then add the following to the top of the bridging-header file:
 ```objc
