@@ -14,11 +14,11 @@
 		<string>github.com:voiceittech/voiceit-sdk-iOS.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>voiceit-sdk-iOS.xcodeproj</string>
+	<string>DemoStarterProjectSwift/voiceit-sdk-iOS.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>333928DF5056606F25103357F45CFFA00776D4C7</key>
-		<string>../..</string>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>github.com:voiceittech/voiceit-sdk-iOS.git</string>

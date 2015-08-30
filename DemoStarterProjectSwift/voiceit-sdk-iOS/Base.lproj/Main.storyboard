@@ -39,9 +39,18 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Result Here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKu-SM-q7W">
-                                <rect key="frame" x="239" y="364" width="123" height="21"/>
+                                <rect key="frame" x="239" y="364" width="123" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Enter a unique userToken in text field and tap Login" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8C6-4g-lgA">
+                                <rect key="frame" x="189" y="78" width="222" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="222" id="uH8-hr-ifp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -52,6 +61,7 @@
                             <constraint firstItem="eDP-Yr-fwg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="146" id="Kq0-ou-dBl"/>
                             <constraint firstAttribute="centerX" secondItem="eDP-Yr-fwg" secondAttribute="centerX" id="LYx-tJ-Lon"/>
                             <constraint firstItem="ist-kV-j1R" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Q1X-kf-Zy6"/>
+                            <constraint firstAttribute="centerX" secondItem="8C6-4g-lgA" secondAttribute="centerX" id="ZGv-PM-0S6"/>
                             <constraint firstItem="ist-kV-j1R" firstAttribute="top" secondItem="eDP-Yr-fwg" secondAttribute="bottom" constant="89" id="qU8-2g-87H"/>
                             <constraint firstItem="uKu-SM-q7W" firstAttribute="top" secondItem="ist-kV-j1R" secondAttribute="bottom" constant="49" id="sbi-1H-g7b"/>
                         </constraints>
