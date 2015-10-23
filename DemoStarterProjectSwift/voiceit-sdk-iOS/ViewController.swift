@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     
     @IBAction func loginClicked(sender: AnyObject) {
         let vc = VoiceItLogin(DEVELOPER_ID,userToken: userTokenField.text!,vpPhrase: "Never forget tomorrow is a new day", textConfidence: "30.0", confidence: "89" , callback: { (result) -> Void in
-            println("Result is \(result)");
+            print("Result is \(result)");
             if result == "Success"
             {
                 self.resultLabel.text = "Login Success";
