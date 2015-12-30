@@ -47,7 +47,10 @@ First lets introduce you to some vocabulary(parameters) that is needed to setup 
   2. **UserToken** : A unique user token(with no spaces) that ties the VoiceIt user enrollments to the user in your own database ex. *johndoe123*
   3. **vpPhrase** : The phrase you would like the user to enroll and authenticate with chosen from [this list](https://siv.voiceprintportal.com/att/en-US-grammar.grxml)
   4. **textConfidence** : Text confidence usually set between 20.0 and 50.0 to make sure the user's are using the right phrase
-  5. **confidence** : The authentication confidence level between 85.0 - 100.0, recommended to use 89.0 for best results
+  5. **confidence** : The authentication confidence level between 85.0 - 100.0, our recommended value is 85.0 for best results
+  6. **accuracy** : The accuracy in evaluating the authentication between 0-5, 0 being the most strict and 5 the most lax.  Our recommended value is 5.  
+  7. **accuracy passes** : Number of times a recording will be run through our engine, but will return upon first successful authentication (between 1-10). Our recommended value is 10.
+  8. **accuracy pass increment** : Amount by which accuracy parameter is increased with every pass (between 1-5).  Our recommended value is 5.
 
 * If using Objective-C please [skip](#objective-c)
 
@@ -64,7 +67,10 @@ let vc = VoiceItLogin(
   userToken: USER_TOKEN_HERE,
   vpPhrase: "Never forget tomorrow is a new day",
   textConfidence: "30.0",
-  confidence: "89" ,
+  accuracy: "5",
+  accuracyPasses: "10",
+  accuracyPassIncrement: "5",
+  confidence: "85" ,
   callback: { (result) -> Void in
     if result == "Success"
     {
@@ -91,7 +97,10 @@ VoiceItLogin * vc =
  userToken:USER_TOKEN_HERE
  vpPhrase:@"Never forget tomorrow is a new day"
  textConfidence:@"30.0"
- confidence:@"89"
+ accuracy:@"5"
+ accuracyPasses:@"10"
+ accuracyPassIncrement:@"5"
+ confidence:@"85"
  callback:^(NSString *result) {
        if ([result isEqualToString:@"Success"]) {
            //DO STUFF WHEN AUTHENTICATED SUCCESSFULLY
