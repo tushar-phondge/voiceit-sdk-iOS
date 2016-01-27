@@ -20,11 +20,20 @@ typedef void (^Return_Result_Block)(NSString *);
 
 - (void)audioRecorderControllerDidCancel:
     (IQAudioRecorderController *)controller;
+
+- (id)init:(NSString *)developerId
+ userToken:(NSString *)userToken
+  vpPhrase:(NSString *)vpPhrase
+textConfidence:(NSString *)textConfidence
+confidence:(NSString *)confidence
+  callback:(void (^)(NSString *))callback;
+
 - (id)init:(NSString *)developerId
          userToken:(NSString *)userToken
           vpPhrase:(NSString *)vpPhrase
     textConfidence:(NSString *)textConfidence
         confidence:(NSString *)confidence
+   contentLanguage:(NSString *)contentLanguage
           callback:(void (^)(NSString *))callback;
 
 - (IBAction)playAction:(UIButton *)sender;
@@ -38,6 +47,7 @@ typedef void (^Return_Result_Block)(NSString *);
 @property (nonatomic, strong) NSString *userToken;
 @property (nonatomic, strong) NSString *textConfidence;
 @property (nonatomic, strong) NSString *confidence;
+@property (nonatomic, strong) NSString *contentLanguage;
 @property (nonatomic, strong) UIButton *recordingButton;
 @property int userExists;
 @property (nonatomic, strong) UILabel *messageDisplay;

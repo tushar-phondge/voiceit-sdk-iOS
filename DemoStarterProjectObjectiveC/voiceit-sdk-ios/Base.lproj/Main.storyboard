@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9058" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9048"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,30 +14,23 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Result Will Display Here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzF-aK-uhi">
-                                <rect key="frame" x="205" y="289" width="183" height="21"/>
-                                <animations/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Result Will Display Here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzF-aK-uhi">
+                                <rect key="frame" x="96" y="557" width="183" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Enter a unique userToken in text field and tap Login" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8Q-fQ-y62">
-                                <rect key="frame" x="147" y="65" width="307" height="44"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="307" id="9VZ-Te-Qnd"/>
-                                    <constraint firstAttribute="height" constant="44" id="HYc-Sm-2mo"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter a unique userToken in text field and tap Login" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8Q-fQ-y62">
+                                <rect key="frame" x="34" y="67" width="307" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ygc-x2-n2r">
-                                <rect key="frame" x="277" y="205" width="38" height="30"/>
-                                <animations/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ygc-x2-n2r">
+                                <rect key="frame" x="168" y="483" width="38" height="30"/>
                                 <state key="normal" title="Login">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -45,31 +38,26 @@
                                     <action selector="clickedLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="awR-ZV-Aor"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SnA-Kl-JWF">
-                                <rect key="frame" x="176" y="133" width="248" height="30"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="248" id="3tc-cA-GN5"/>
-                                </constraints>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G35-QS-Kwd">
+                                <rect key="frame" x="-113" y="126" width="600" height="216"/>
+                            </pickerView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="VoicePrint Phrase" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vr4-zu-B9U">
+                                <rect key="frame" x="70" y="339" width="248" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="UserToken" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SnA-Kl-JWF">
+                                <rect key="frame" x="70" y="421" width="248" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="centerX" secondItem="pzF-aK-uhi" secondAttribute="centerX" id="1R1-Mb-fkq"/>
-                            <constraint firstItem="Ygc-x2-n2r" firstAttribute="top" secondItem="SnA-Kl-JWF" secondAttribute="bottom" constant="46" id="CUp-9P-cbM"/>
-                            <constraint firstAttribute="centerX" secondItem="SnA-Kl-JWF" secondAttribute="centerX" id="Cc0-6m-VEU"/>
-                            <constraint firstAttribute="centerX" secondItem="u8Q-fQ-y62" secondAttribute="centerX" id="NSO-0c-g8D"/>
-                            <constraint firstItem="u8Q-fQ-y62" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="59" id="VHq-53-zOx"/>
-                            <constraint firstAttribute="centerX" secondItem="Ygc-x2-n2r" secondAttribute="centerX" id="dnf-0h-rRX"/>
-                            <constraint firstItem="SnA-Kl-JWF" firstAttribute="top" secondItem="u8Q-fQ-y62" secondAttribute="bottom" constant="29" id="lwK-s5-21X"/>
-                            <constraint firstItem="pzF-aK-uhi" firstAttribute="top" secondItem="Ygc-x2-n2r" secondAttribute="bottom" constant="54" id="mg5-MD-BFR"/>
-                            <constraint firstAttribute="centerX" secondItem="u8Q-fQ-y62" secondAttribute="centerX" id="nUC-eK-HfL"/>
-                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="contentLangPicker" destination="G35-QS-Kwd" id="2Ru-5t-3w1"/>
+                        <outlet property="phraseField" destination="Vr4-zu-B9U" id="aeD-7a-LxA"/>
                         <outlet property="resultLabel" destination="pzF-aK-uhi" id="OlR-cV-gfW"/>
                         <outlet property="userTokenField" destination="SnA-Kl-JWF" id="i6L-lj-A6Y"/>
                     </connections>

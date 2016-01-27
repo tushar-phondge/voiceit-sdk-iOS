@@ -48,10 +48,24 @@
                   passwd:(NSString *)passwd
      pathToEnrollmentWav:(NSString *)pathToEnrollmentWav
                 callback:(void (^)(NSString *))callback;
+
+- (void)createEnrollment:(NSString *)email
+                  passwd:(NSString *)passwd
+     pathToEnrollmentWav:(NSString *)pathToEnrollmentWav
+         contentLanguage:(NSString *)contentLanguage
+                callback:(void (^)(NSString *))callback;
+
 - (void)createEnrollmentByWavURL:(NSString *)email
                           passwd:(NSString *)passwd
               urlToEnrollmentWav:(NSString *)urlToEnrollmentWav
                         callback:(void (^)(NSString *))callback;
+
+- (void)createEnrollmentByWavURL:(NSString *)email
+                          passwd:(NSString *)passwd
+              urlToEnrollmentWav:(NSString *)urlToEnrollmentWav
+                 contentLanguage:(NSString *)contentLanguage
+                        callback:(void (^)(NSString *))callback;
+
 - (void)deleteEnrollment:(NSString *)email
                   passwd:(NSString *)passwd
             enrollmentId:(NSString *)enrollmentId
@@ -59,13 +73,24 @@
 
 // Authentication API Calls
 - (void)authentication:(NSString *)email
+                passwd:(NSString *)passwd
+pathToAuthenticationWav:(NSString *)pathToAuthenticationWav
+              accuracy:(NSString *)accuracy
+        accuracyPasses:(NSString *)accuracyPasses
+ accuracyPassIncrement:(NSString *)accuracyPassIncrement
+            confidence:(NSString *)confidence
+              callback:(void (^)(NSString *))callback;
+
+- (void)authentication:(NSString *)email
                      passwd:(NSString *)passwd
     pathToAuthenticationWav:(NSString *)pathToAuthenticationWav
                    accuracy:(NSString *)accuracy
              accuracyPasses:(NSString *)accuracyPasses
       accuracyPassIncrement:(NSString *)accuracyPassIncrement
+            contentLanguage:(NSString *)contentLanguage
                  confidence:(NSString *)confidence
                    callback:(void (^)(NSString *))callback;
+
 - (void)authenticationByWavURL:(NSString *)email
                         passwd:(NSString *)passwd
         urlToAuthenticationWav:(NSString *)urlToAuthenticationWav
@@ -73,5 +98,15 @@
                 accuracyPasses:(NSString *)accuracyPasses
          accuracyPassIncrement:(NSString *)accuracyPassIncrement
                     confidence:(NSString *)confidence
+                      callback:(void (^)(NSString *))callback;
+
+- (void)authenticationByWavURL:(NSString *)email
+                        passwd:(NSString *)passwd
+        urlToAuthenticationWav:(NSString *)urlToAuthenticationWav
+                      accuracy:(NSString *)accuracy
+                accuracyPasses:(NSString *)accuracyPasses
+         accuracyPassIncrement:(NSString *)accuracyPassIncrement
+                    confidence:(NSString *)confidence
+               contentLanguage:(NSString *)contentLanguage
                       callback:(void (^)(NSString *))callback;
 @end
