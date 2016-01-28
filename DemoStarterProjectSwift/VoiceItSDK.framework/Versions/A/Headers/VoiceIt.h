@@ -35,15 +35,12 @@
 - (void)deleteUser:(NSString *)email
             passwd:(NSString *)passwd
           callback:(void (^)(NSString *))callback;
+
+// Enrollments API Calls
 - (void)getEnrollments:(NSString *)email
                 passwd:(NSString *)passwd
               callback:(void (^)(NSString *))callback;
-- (void)getEnrollmentsCount:(NSString *)email
-                     passwd:(NSString *)passwd
-                    vppText:(NSString *)vppText
-                   callback:(void (^)(NSString *))callback;
 
-// Enrollments API Calls
 - (void)createEnrollment:(NSString *)email
                   passwd:(NSString *)passwd
      pathToEnrollmentWav:(NSString *)pathToEnrollmentWav
@@ -66,6 +63,17 @@
                  contentLanguage:(NSString *)contentLanguage
                         callback:(void (^)(NSString *))callback;
 
+- (void)getEnrollmentsCount:(NSString *)email
+                     passwd:(NSString *)passwd
+                    vppText:(NSString *)vppText
+                   callback:(void (^)(NSString *))callback;
+
+- (void)getEnrollmentsCount:(NSString *)email
+                     passwd:(NSString *)passwd
+                    vppText:(NSString *)vppText
+            contentLanguage:(NSString *)contentLanguage
+                   callback:(void (^)(NSString *))callback;
+
 - (void)deleteEnrollment:(NSString *)email
                   passwd:(NSString *)passwd
             enrollmentId:(NSString *)enrollmentId
@@ -87,8 +95,8 @@ pathToAuthenticationWav:(NSString *)pathToAuthenticationWav
                    accuracy:(NSString *)accuracy
              accuracyPasses:(NSString *)accuracyPasses
       accuracyPassIncrement:(NSString *)accuracyPassIncrement
-            contentLanguage:(NSString *)contentLanguage
                  confidence:(NSString *)confidence
+            contentLanguage:(NSString *)contentLanguage
                    callback:(void (^)(NSString *))callback;
 
 - (void)authenticationByWavURL:(NSString *)email

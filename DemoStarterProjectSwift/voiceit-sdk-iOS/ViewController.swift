@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func loginClicked(sender: AnyObject) {
-        let vc = VoiceItLogin(DEVELOPER_ID,userToken: userTokenField.text!,vpPhrase: "Never forget tomorrow is a new day", textConfidence: "30.0", confidence: "89" , callback: { (result) -> Void in
+        let vc = VoiceItLogin(DEVELOPER_ID,userToken: userTokenField.text!,vpPhrase: "Never forget tomorrow is a new day", textConfidence: "30.0", confidence: "89" , contentLanguage: "en-US", callback: { (result) -> Void in
             print("Result is \(result)");
             if result == "Success"
             {
