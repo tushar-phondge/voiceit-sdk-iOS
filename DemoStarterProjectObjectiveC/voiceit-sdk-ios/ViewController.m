@@ -31,7 +31,7 @@ NSString * DEVELOPER_ID;
 }
 
 - (IBAction)clickedLogin:(id)sender {
-    VoiceItLogin * vc = [[VoiceItLogin alloc] init:DEVELOPER_ID userToken:[[self userTokenField] text] vpPhrase:@"Never forget tomorrow is a new day" textConfidence:@"30.0" confidence:@"87" callback:^(NSString *result) {
+    VoiceItLogin * vc = [[VoiceItLogin alloc] init:DEVELOPER_ID userToken:[[self userTokenField] text] vpPhrase:@"Never forget tomorrow is a new day" textConfidence:@"30.0" confidence:@"87" contentLanguage:@"en-US" callback:^(NSString *result) {
         if ([result isEqualToString:@"Success"]) {
             //DO STUFF WHEN AUTHENTICATED SUCCESSFULLY
         }
