@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     //ADD YOUR VOICEIT DEVELOPER ID HERE for Example: 123456, If you do not already have a DEVELOPER ID get one 
     //at https://siv.voiceprintportal.com/getDeveloperID.jsp
     
-    let DEVELOPER_ID = "DEVELOPER_ID_HERE"
+    let DEVELOPER_ID = "196468c9b5a24345afe5ea2878ac6f0f"
 
     @IBOutlet weak var userTokenField: UITextField!
     @IBOutlet weak var resultLabel: UILabel!
@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func loginClicked(sender: AnyObject) {
-        let vc = VoiceItLogin(DEVELOPER_ID,userToken: userTokenField.text!,vpPhrase: "Never forget tomorrow is a new day", textConfidence: "30.0", confidence: "89" , contentLanguage: "en-US", callback: { (result) -> Void in
+        let vc = VoiceItLogin(DEVELOPER_ID,userToken: userTokenField.text!,vpPhrase: "Más vale pájaro en mano que cien volando.", textConfidence: "30.0", confidence: "89" , contentLanguage: "es-ES", callback: { (result) -> Void in
             print("Result is \(result)");
             if result == "Success"
             {

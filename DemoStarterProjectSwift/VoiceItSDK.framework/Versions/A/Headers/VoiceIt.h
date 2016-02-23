@@ -14,9 +14,11 @@
 
 // Properties
 @property (nonatomic, strong) NSString *developerId;
+@property (nonatomic, strong) NSString *platformID;
 
 // Constructor
 - (id)init:(NSString *)developerId;
+- (id)init:(NSString *)developerId thePlatformId:(NSString *)thePlatformId;
 
 // User API Calls
 - (void)getUser:(NSString *)email
