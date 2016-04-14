@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface Encryption : NSObject
-+(NSString*) sha256:(NSString*)input;
++ (NSString *)sha256:(NSString *)input;
 @end

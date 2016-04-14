@@ -27,18 +27,19 @@
 
 @protocol IQAudioRecorderControllerDelegate <UINavigationControllerDelegate>
 
--(void)audioRecorderController:(IQAudioRecorderController*)controller didFinishWithAudioAtPath:(NSString*)filePath;
--(void)audioRecorderControllerDidCancel:(IQAudioRecorderController*)controller;
+- (void)audioRecorderController:(IQAudioRecorderController *)controller
+       didFinishWithAudioAtPath:(NSString *)filePath;
+- (void)audioRecorderControllerDidCancel:
+    (IQAudioRecorderController *)controller;
 
 @end
-
-
 
 @interface IQAudioRecorderController : UINavigationController
-//- (id)init:(NSString*)typeOfRecording;
-//-(id)initWithRootViewController:(UIViewController *)rootViewController typeOfRecording:(NSString *)typeOfRecording;
-@property(nonatomic, weak) id<IQAudioRecorderControllerDelegate,UINavigationControllerDelegate> delegate;
-
+@property NSString *typeOfRecording;
+//-(id)initWithRootViewController:(UIViewController *)rootViewController
+//typeOfRecording:(NSString *)typeOfRecording;
+@property (nonatomic, weak) id<IQAudioRecorderControllerDelegate,
+                               UINavigationControllerDelegate> delegate;
 @end
 
-//NSTimer * voiceTimer;
+// NSTimer * voiceTimer;

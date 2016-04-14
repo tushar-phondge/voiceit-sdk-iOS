@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     
     let DEVELOPER_ID = "DEVELOPER_ID_HERE"
     
+    
     @IBOutlet weak var userTokenField: UITextField!
     @IBOutlet weak var resultLabel: UILabel!
     override func viewDidLoad() {
@@ -28,6 +29,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func loginClicked(sender: AnyObject) {
+        print("Something Should Be Working")
         let vc = VoiceItLogin(DEVELOPER_ID,userToken: userTokenField.text!,vpPhrase: "Never forget tomorrow is a new day", textConfidence: "30.0", confidence: "89" , contentLanguage: "en-US", callback: { (result) -> Void in
             print("Result is \(result)");
             if result == "Success"
