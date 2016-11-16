@@ -12,21 +12,19 @@ class ViewController: UIViewController {
     //ADD YOUR VOICEIT DEVELOPER ID HERE for Example: 123456, If you do not already have a DEVELOPER ID get one
     //at https://siv.voiceprintportal.com/getDeveloperID.jsp
     
-    let DEVELOPER_ID = "200015" //"DEVELOPER_ID_HERE"
-    
+    let DEVELOPER_ID = "DEVELOPER_ID_HERE"
     
     @IBOutlet weak var userTokenField: UITextField!
     @IBOutlet weak var resultLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     
     @IBAction func loginClicked(_ sender: AnyObject) {
         print("Something Should Be Working")

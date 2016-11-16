@@ -53,11 +53,16 @@ confidence:(NSString *)confidence
 @property (nonatomic, strong) UILabel *messageDisplay;
 @property (nonatomic, copy) Return_Result_Block returnResults;
 @property int tempNumEnrollments;
-//@property int currentAction;
 @property MBProgressHUD *HUD;
 @property IQAudioRecorderController *controller;
 @property VoiceIt *myVoiceIt;
+    
 /*
-
+ Customization Parameters
 */
+
+@property (nonatomic, strong) UIImage * logoImage;
+@property (nonatomic, strong) UIImage * recordingButtonImage;
+@property (nonatomic, strong) UIColor  * backgroundColor;
+    
 @end
