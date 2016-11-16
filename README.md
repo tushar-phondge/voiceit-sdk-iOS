@@ -77,7 +77,7 @@ let vc = VoiceItLogin(
         //DO SOMETHING IF AUTHENTICATION FAILED
     }
 })
-self.presentViewController(vc, animated: true, completion: nil)
+self.present(vc!, animated: true, completion: nil)
 ```
 
 ### Objective-C
